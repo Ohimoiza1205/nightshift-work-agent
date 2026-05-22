@@ -38,3 +38,4 @@ htmlcov/
 
 # Temp files from code review
 nightshift_review_*/
+.claude/
