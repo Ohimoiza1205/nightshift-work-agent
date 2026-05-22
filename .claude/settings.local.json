@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\ohimo\\\\nightshift-work-agent\" -Recurse | Where-Object { -not $_.PSIsContainer } | Select-Object FullName, Length)",
+      "Bash(python -m py_compile config.py)",
+      "Bash(python -m py_compile nightshift_client.py)",
+      "Bash(python -m py_compile task_executor.py)",
+      "Bash(python -m py_compile report_generator.py)",
+      "Bash(python -m py_compile agent.py)",
+      "Bash(python agent.py --help)",
+      "Bash(python agent.py review --help)"
+    ]
+  }
+}
